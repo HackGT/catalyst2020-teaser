@@ -1,14 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Catalyst 2020</title>
-  </head>
-  <body>
-    <h1>Catalyst 2020 Teaser Under Construction</h1>
-    <script src="index.js"></script>
-  </body>
+   <head>
+        <link href="style.css" rel="stylesheet"/>
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1">
+        <link rel="icon" type="image/png" href="./favicon.png"/>
+        <meta property="og:title" content="Catalyst 3">
+        <meta property="og:description" content="Catalyst is a free event held on Satuday _________ from _AM to _PM, where metro Atlanta high school students will explore technology and learn from our sponsors and mentors at Georgia Tech.">
+        <!-- <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg"> -->
+        <meta property="og:url" content="https://catalyst.hack.gt">
+        <title>Catalyst</title>
+    </head>
+
+    <body>
+    <div id="container">
+        <nav>
+            <input type="checkbox" id="hamburger-input"/>
+            <label for="hamburger-input" id="hamburger-label">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul>
+                <a href="#home"><li><span>Home</span></li></a>
+                <!--<a href="#important-info"><li><span>Important Info</span></li></a>-->
+                <a href="#about"><li><span>About</span></li></a>
+                <!--<a href="#day"><li><span>During the Day</span></li></a>-->
+                <a href="#registration"><li><span>Registration</span></li></a>
+                <a href="#tracks"><li><span>Tracks</span></li></a>
+                <!--<a href="#schedule"><li><span>Schedule</span></li></a> -->
+                <a href="#faq"><li><span>FAQ</span></li></a>
+                <!--<a href="#sponsors"><li><span>Sponsors</span></li></a>-->
+            </ul>
+        </nav>
+        <div id="content">
+            <section id="home">
+                <div id="splash-parent">
+                    <div id="splash-text">
+                        <h1>Catalyst</h1>
+                        <h3>Presented by HackGT</h3>
+                    </div>
+                </div>
+                <!--<div id="countdown">
+                    <div><span id="days">0</span></div>
+                    <div><span id="hours">0</span></div>
+                    <div><span id="minutes">0</span></div>
+                    <div><span id="seconds">0</span></div> 
+
+
+                    <div class="register"><a href="#important-info">Day-Of Info</a></div>
+                     <div class="register"><a href="https://registration.catalyst.hack.gt/">Register</a></div>
+                </div> -->
+            </section>
+            <!--<section id="important-info">
+                <div>
+                    <h1>Important Information/FAQ</h1>
+                    <div class="container">
+                        <div class="col">
+                            <p>We are super excited to welcome amazing students from all over the Atlanta Metro Area to the Klaus Advanced Computing Building at Georgia Tech for a day of STEAM education and exploration!</p>
+                            <p>General Reminders</p>
+                            <ul>
+                                <li>Catalyst will begin at 10:00am and end at 8:00pm on Saturday, ____________, 2019!</li>
+                                <li>The event will take place at the <a href="https://goo.gl/maps/r45k7GuBCU92" target="_blank">Klaus Advanced Computing Building</a>.</li>
+                                <li>General check-in will begin at ____am and ends at ____am.</li>
+                                <li>General check-out will begin at _____pm and ends at ____pm.</li>
+                                <li>Make sure to bring your <em><a href="" target="_blank">Catalyst Forms</a></em></li>
+                            </ul>
+
+                            <p>Check-in Reminders</p>
+                            <ul>
+                                <li><em>Fill out</em> and <em>bring</em> your <em><a href="" target="_blank">Catalyst Forms</a></em> to check-in.</li>
+                                <li>These forms <em>must</em> be filled out for <em>each participant!</em></li>
+                                <li>These forms are <em>required</em> in order to check-in!</li>
+                                <li>Make sure each page is filled out thoroughly!</li>
+                                <li>Anyone can drop you off at the event, but you must have these forms.</li>
+                                <li><em>Only those listed on the "Pick Up Authorization" page can check-out a participant.</em></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <img src="assets/registration.svg"/>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>General Pickup/Dropoff Information</p>
+                        <ul>
+                            <li>For general pickup and dropoff, use the <a href="https://goo.gl/maps/r45k7GuBCU92" target="_blank">Klaus Parking Deck (E40)</a>.</li>
+                            <li>General dropoff will go from 8:30am to 10:30am.</li>
+                            <li>General pickup will go from 7:30pm to 9:30pm.</li>
+                            <li>Any cars parked in this deck outside these times will be ticketed.</li>
+                            <li>Tell the attendant you are here for Catalyst, park in a non-reserved space, and follow HackGT Staff and signs to the Atrium.</li>
+                        </ul>
+
+                        <p>Late Dropoff/Early Pickup</p>
+                        <ul>
+                            <li>If you arrive after 10:30am or leave before 7:30pm, park at the <a href="https://goo.gl/maps/wCbELo8mPHT2" target="_blank">State Street Parking Deck</a>.</li>
+                            <li>Bring the ticket you get from the machine to the help desk in the Klaus Atrium when checking-in/out to get your parking validated.</li>
+                        </ul>
+
+                        <p>Parking Information</p>
+                        <ul>
+                            <li>If you are driving and parking for the duration of Catalyst, park at the <a href="https://goo.gl/maps/wCbELo8mPHT2" target="_blank">State Street Parking Deck</a>.</li>
+                            <li>Bring the ticket you get from the machine to the event. <em>Do not lose this ticket. We are not responsible for lost tickets.</em></li>
+                            <li>We will validate parking when you check out.</li>
+                        </ul>
+
+                        <p>I have this other question! Email us at <a href="mailto:hello@hack.gt" target="_blank">hello@hack.gt</a> and we'll get back to you as soon as we can!</p>
+                    </div>
+                </div>
+            </section> -->
+            <section id="about">
+                <div>
+                    <h1>About</h1>
+                    <div class="container">
+                        <div class="col">
+                            <p>HackGT presents Catalyst, a FREE day of STEAM directed towards high school students in the Metro Atlanta Area. We are eager to welcome all of these students on <b><u>Saturday April 13th</u></b> from 10am to 8pm to Georgia Tech's Campus.</p>
+                        </div>
+
+                        <div class="col">
+                            <img src="assets/about.svg"/>
+                        </div>
+                    </div>
+                    <p>This will be an opportunity for participants to:</p>
+                    <ul>
+                        <li>Learn about the world of STEAM and Computer Science as a career path.</li>
+                        <li>Gain insight into impactful, widely known tech companies. </li>
+                        <li>Receive mentorship from college students and industry professionals.</li>
+                        <li>Connect with summer camp opportunities at Georgia Tech and in the city to further their education and exposure.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="day">
+                <div>
+                    <h1>During the Day</h1>
+                    <div class="container">
+                        <div class="col">
+                            <p>Throughout the day, students will follow one of four tracks: Design, Hardware, Gaming, or Software</p>
+
+                            <p>Each track will have workshops and will allow students to build a piece of technology they can take home. In addition to the track workshops, there will be opportunities for students to engage with industry professionals and college students.</p>
+
+                            <p>We want to show high school students the value of computer science, which is why we are providing free food, free swag, and everything needed to get started.</p>
+                        </div>
+
+                        <div class="col">
+                            <img src="assets/DuringTheDay.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="registration">
+                <div>
+                    <h1>Registration</h1>
+                    <div class="container">
+                        <div class="col">
+                            <p>You can register <a href="https://registration.catalyst.hack.gt/">here!</a></p>
+                            <p>Registration closes on April 5th, so sign up now!</p>
+                        </div>
+
+                        <div class="col">
+                            <img src="assets/registration.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tracks">
+                <div>
+                    <h1>Tracks</h1>
+                    <div class="container">
+                        <div class="col">
+                            <div class="container">
+                                <div class="col">
+                                    <p>Hardware</p>
+                                </div>
+
+                                <div class="col track-description">
+                                    <div class="track-icon"><img src="assets/hardware.svg"/></div>
+                                </div>
+                                <div class="track-text">
+                                    <p>Build next-generation devices that will power future tech! In the hardware track, you'll learn how to design fundamental circuits through breadboarding and Arduino, create devices that you can interact with, and gain skills that will help you bring your ideas to life. Students will have the opportunity to build their own electronic hardware and then take home their creations to share with friends and family!</p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col">
+                                    <p>Gaming</p>
+                                </div>
+
+                                <div class="col track-description">
+                                    <div class="track-icon"><img src="assets/gaming.svg"/></div>
+                                </div>
+                                <div class="track-text">
+                                    <p>The gaming track focuses on teaching fundamental programming concepts through video game design and development. This track will introduce level design and block-based coding using Scratch and will transition into text-based coding in Roblox. Throughout the day, participants will complete short challenges and activities to reinforce concepts learned and will finish the day with a full game created from start to finish in Scratch.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="container">
+                                <div class="col">
+                                    <p>Software</p>
+                                </div>
+
+                                <div class="col track-description">
+                                    <div class="track-icon"><img src="assets/software.svg"/></div>
+                                </div>
+                                <div class="track-text">
+                                    <p>Learn how to build the technology that runs the world! In the software track, you will learn how to code, use that to build your own website, and eventually create a Spotify song recommendation system! If you're interested in building the future of the internet, the software track is for you!</p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col">
+                                    <p>Design</p>
+                                </div>
+
+                                <div class="col track-description">
+                                    <div class="track-icon"><img src="assets/design.svg"/></div>
+                                </div>
+                                <div class="track-text">
+                                    <p>The design track focuses on the intersection of art and programming, bridging the gap between tech and design. Students will learn the fundamentals of computer science through hands-on art projects dealing with snapchat filters, animation, graphic design, and much more! At the end of the day, students get to bring home their newfound knowledge for computer science and a new work of art.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--<section id="schedule">
+                <div>
+                    <h1>Schedule</h1>
+                    <div>
+                        <a href="https://info.hack.gt" target="_blank">
+                            <div>
+                                <img src="assets/schedule.svg"/>
+                            </div>
+                        </a>
+
+                        <div>
+                            <p>The schedule is currently posted at <a href="https://info.hack.gt">info.hack.gt</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section id="faq">
+                <div>
+                    <h1>FAQ</h1>
+                    <div>
+                        <p>Who can attend?</p>
+                        <p>High school students from all school districts are welcome to register for the event!</p>
+
+                        <p>Should I bring anything?</p>
+                        <p>Nope! We will provide food for every participant and laptops for every team. Our sponsors will also have some free swag for you to take home!</p>
+
+                        <p>Where is Catalyst?</p>
+                        <p>The event will be in the <a href="https://goo.gl/maps/vYgv5rqy1hz">Klaus Advanced Computing Building</a> at Georgia Tech.</p>
+
+                        <p>What about parking?</p>
+                        <p>Check out the <a href="#important-info">important information</a> section for more information!</p>
+
+                        <p>Are parents allowed to come?</p>
+                        <p>Although we are grateful for parental support, this is a student-only event from check-in on.</p>
+
+                        <p>How do I choose which track to attend?</p>
+                        <p>Participants will be able to choose which track they would like to follow at the event.</p>
+
+                        <p>What is HackGT?</p>
+                        <p>HackGT is a student organization and 501(c)(4) non-profit at Georgia Tech devoted to Computer Science outreach in collegiate and high school communities. To learn more, check out our organization website <a href="https://hack.gt">here</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <!--<section id="sponsors">
+                <div>
+                    <h1>Sponsors</h1>
+                    <div class="sponsor-container">
+                        <a href="https://amazon.com"><img src="assets/logo-amazon.svg"/></a>
+                        <a href="https://facebook.com"><img src="assets/logo-fb.svg"/></a>
+                        <a href="https://disney.com"><img src="assets/logo-disney.svg"/></a>
+                        <a href="https://www.pixar.com/"><img src="assets/logo-pixar.svg"/></a>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
 </html>
