@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,800i");
 
+
+@font-face {
+    font-family: 'EarthOrbiter';
+    src: url('./assets/EarthOrbiter/EarthOrbiter-YZ12.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./assets/Ubuntu/Ubuntu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div{
+    font-family: 'Ubuntu';
+}
+
 body {
   background-color: #1a1a1a;
   color: #e6e6e6;
@@ -61,8 +81,9 @@ nav ul {
 }
 
 nav a {
+  /*font-family: 'EarthOrbiter'; */
   font-weight: 800;
-  font-style: italic;
+  /*font-style: italic;*/
   font-size: 1.5em;
   text-decoration: none;
   padding: 0.25em;
@@ -126,6 +147,7 @@ section:not(#home) > div {
 }
 
 section:not(#home) h1 {
+  font-family: 'EarthOrbiter';
   font-size: 3em;
 }
 
