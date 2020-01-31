@@ -566,7 +566,7 @@ nav {
 }
 
 #content {
-  background-image: url("assets/newdoodles.svg");
+  background-image: url("assets/background.png");
   background-size: cover;
   height: 100vh;
   flex: 1;
