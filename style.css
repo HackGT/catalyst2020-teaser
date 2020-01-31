@@ -222,7 +222,6 @@ h3 {
 }
 
 #splash-text {
-  background-color: rgba(0, 0, 0, 0.95);
   padding: 0.5em 1em;
   margin-top: 50vh;
   text-transform: uppercase;
@@ -687,7 +686,6 @@ h3 {
 }
 
 #splash-text {
-  background-color: rgba(0, 0, 0, 0.95);
   padding: 0.5em 1em;
   margin-top: 50vh;
   text-transform: uppercase;
