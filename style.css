@@ -11,13 +11,15 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('./assets/Ubuntu/Ubuntu-Regular.ttf');
+    src: url('./assets/Ubuntu/Ubuntu-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 div{
     font-family: 'Ubuntu';
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -149,6 +151,7 @@ section:not(#home) > div {
 section:not(#home) h1 {
   font-family: 'EarthOrbiter';
   font-size: 3em;
+  text-decoration: none;
 }
 
 section:not(#home) p {
@@ -174,7 +177,7 @@ section:not(#home) p {
 }
 
 #tracks .container .container .col p {
-  text-decoration: underline;
+  font-family: "EarthOrbiter";
 }
 
 #tracks .container .container .col {
@@ -220,13 +223,17 @@ h1,
 h2,
 h3 {
   font-weight: 800;
-  font-style: italic;
+  /*font-style: italic; */
 }
 
 #home {
   text-align: center;
   height: 100%;
   margin: 0;
+}
+
+#home h3 {
+  font-size: .8em;
 }
 
 #splash-text > h1 {
@@ -249,7 +256,7 @@ h3 {
   text-transform: uppercase;
   display: inline-block;
   font-size: 1.5em;
-  transform: translateY(-60%);
+  /*transform: translateY(-60%); */
   margin-right: auto;
   margin-left: auto;
 }
@@ -372,6 +379,7 @@ h3 {
     margin: 0;
   }
 
+
   #hamburger-label {
     background-color: rgb(0, 0, 0);
     display: block;
@@ -410,13 +418,21 @@ h3 {
     margin-top: 0;
     margin-left: 0;
     transition: 0.5s all;
-    background-color: rgba(0, 0, 0, 0.9);
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    background-color: #29223C;
     height: 100vh;
     top: 0;
   }
 
   nav ul {
     padding-top: 4em;
+  }
+
+  nav a:hover {
+    color: linear-gradient(
+    to right,
+    #FF7BAC,
+    #FD9675  );
   }
 
   #hamburger-input:checked ~ ul {
@@ -547,10 +563,9 @@ nav ul {
 }
 
 nav a {
-  font-weight: 800;
-  font-style: italic;
+  font-weight: bold;
+  font-style: initial;
   font-size: 1.5em;
-  text-decoration: none;
   padding: 0.25em;
   color: #999;
   transition: 0.5s color;
@@ -637,9 +652,9 @@ section:not(#home) p {
   flex: 2;
 }
 
-#tracks .container .container .col p {
+/*#tracks .container .container .col p {
   text-decoration: underline;
-}
+}*/
 
 #tracks .container .container .col {
   transition: 0.25s all;
@@ -684,7 +699,7 @@ h1,
 h2,
 h3 {
   font-weight: 800;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 #home {
