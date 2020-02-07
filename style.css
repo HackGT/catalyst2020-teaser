@@ -39,6 +39,10 @@ body {
   display: flex;
 }
 
+#track-container {
+  padding-bottom: 20%;
+}
+
 .col {
   flex: 1;
 }
@@ -694,7 +698,6 @@ section:not(#home) p {
   height: 100%;
   width: 90%;
   padding: 0.25em;
-
   display: flex;
   justify-content: center;
   align-content: center;

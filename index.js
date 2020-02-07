@@ -58,7 +58,7 @@ setInterval(updateTime, 1000);
 // window.onload = handleScroll;
 // document.getElementById("content").onscroll = handleScroll;
 
-// var checkbox = document.getElementById("hamburger-input");
-// function uncheck() {
-//   checkbox.checked = false;
-// }
+var checkbox = document.getElementById("hamburger-input");
+function uncheck() {
+  checkbox.checked = false;
+}
