@@ -126,14 +126,31 @@ nav {
 }
 
 #content {
-  background-image: url("assets/background.png");
-  background-size: cover;
+  background: 
+      url(assets/space/Stars_Stars.svg),
+      url(assets/space/Blob_1_Blob_1.svg),
+      url(assets/space/Planet_2_Planet_2.svg),
+      url(assets/space/Planet_3_Planet_3.svg),
+      url(assets/space/Blob_2_Blob_2.svg),
+      url(assets/space/Blob_3_Blob_3.svg),
+      url(assets/space/Planet_1_Planet_1.svg),
+      rgba(48, 37, 62, 1);
+  background-size: 100%,
+  50%, 18%, 15%, 40%, 60%, 78%, cover;
   height: 100vh;
   flex: 1;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-position: center;
+  background-position: 
+      center, /*Stars*/
+      -10% -50%, /*Blob 1*/
+      75% 9%, /*Planet 2*/
+      90% 80%,  /*Planet 3*/
+      110% 15%, /*Blob 2*/
+      110% 250%, /*Blob 3*/
+      -90% -200%, /*Planet 1*/
+      center; /*Background color*/
 }
 
 #content-wrapper {
@@ -145,7 +162,7 @@ section:not(#home) {
 }
 
 section:not(#home) > div {
-  min-height: 90%;
+  min-height: 50%;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2em 3em;
 }
@@ -610,14 +627,31 @@ nav {
 }
 
 #content {
-  background-image: url("assets/background.png");
-  background-size: cover;
+  background: 
+      url(assets/space/Stars_Stars.svg),
+      url(assets/space/Blob_1_Blob_1.svg),
+      url(assets/space/Planet_2_Planet_2.svg),
+      url(assets/space/Planet_3_Planet_3.svg),
+      url(assets/space/Blob_2_Blob_2.svg),
+      url(assets/space/Blob_3_Blob_3.svg),
+      url(assets/space/Planet_1_Planet_1.svg),
+      rgba(48, 37, 62, 1);
+  background-size: 100%,
+  50%, 18%, 15%, 40%, 60%, 78%, cover;
   height: 100vh;
   flex: 1;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-position: center;
+  background-position: 
+      center, /*Stars*/
+      -10% -50%, /*Blob 1*/
+      75% 9%, /*Planet 2*/
+      90% 80%,  /*Planet 3*/
+      110% 15%, /*Blob 2*/
+      110% 250%, /*Blob 3*/
+      -90% -200%, /*Planet 1*/
+      center; /*Background color*/
 }
 
 #content-wrapper {
@@ -629,7 +663,7 @@ section:not(#home) {
 }
 
 section:not(#home) > div {
-  min-height: 90%;
+  min-height: 50%;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2em 3em;
 }

@@ -18,11 +18,47 @@ function updateTime() {
   seconds.innerHTML = Math.floor((delta % (1000 * 60)) / 1000);
 }
 
+var gradient = 0;
+//var nav = document.getElementsByTagName("nav")[0];
+//var navLinks = nav.getElementsByTagName("a");
+
+function gradientTime(linkk) {
+    switch(gradient % 6) {
+        case 0:
+            linkk.style.color = "rgb(249, 247, 122)";
+            break;
+        case 1:
+            linkk.style.color = "rgb(254, 198, 104)";
+            break;
+        case 2:
+            linkk.style.color = "rgb(253, 150, 117)";
+            break;
+        case 3:
+            linkk.style.color = "rgb(253, 113, 146)";
+            break;
+        case 4:
+            linkk.style.color = "rgb(212, 96, 176)";
+            break;
+        case 5:
+            linkk.style.color = "rgb(132, 97, 192)";
+            break;
+    }
+    gradient++;
+}
+
+function removeColor(linkk) {
+    linkk.style.color = "rgb(153, 153, 153)";
+}
+
 updateTime();
 setInterval(updateTime, 1000);
 
-// var nav = document.getElementsByTagName("nav")[0];
-// var navLinks = nav.getElementsByTagName("a");
+
+
+
+
+
+
 // var states = [];
 // for (var i = 0; i < navLinks.length; i++) {
 //   states.push(navLinks[i].getAttribute("href"));
