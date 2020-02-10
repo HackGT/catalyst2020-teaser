@@ -41,6 +41,7 @@ body {
 
 #track-container {
   padding-bottom: 20%;
+  margin-bottom: 6em;
 }
 
 .col {
@@ -294,12 +295,13 @@ h3 {
   margin: 2.5em;
   text-align: center;
   float: right;
+  margin-bottom: 0.5em;
 }
 
 #countdown div {
   width: 1.5em;
   height: 1.5em;
-  margin: 0.25em;
+  margin: 0.5em;
   background-color: rgba(0, 0, 0, 0.95);
   padding: 0.75em;
   font-size: 2.5em;
@@ -315,6 +317,18 @@ h3 {
 
 #countdown div.register a {
   width: 100%;
+}
+
+.register {
+  height: 1.5em;
+  margin: 1.5em;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 1em;
+  font-size: 1.5em;
+  float: left;
+  margin-left: 2.5em;
+  margin-top: 2.5em;
+  text-align: center;
 }
 
 .register:hover {
@@ -495,7 +509,7 @@ h3 {
     display: block;
   }
   .col:not(.track-description) {
-    font-size: 1.125em;
+    font-size: 0.25em;
     /* text-align: center; */
   }
   .col:not(.track-description) p {
@@ -505,6 +519,7 @@ h3 {
 
   .track-text p {
     background-color: black;
+    font-size: 0.25em;
   }
   .sponsor-container {
     display: block;
@@ -700,6 +715,7 @@ section:not(#home) p {
 
 #tracks .container .container {
   position: relative;
+  margin-bottom: 6em;
 }
 
 .col.track-description {
@@ -996,6 +1012,7 @@ h3 {
 
   .track-text p {
     background-color: black;
+    font-size: 0.125em;
   }
   .sponsor-container {
     display: block;
@@ -1006,6 +1023,10 @@ h3 {
   }
   .sponsor-container a:first-of-type {
     max-width: none;
+  }
+
+  .register div {
+    margin-bottom: 3em;
   }
 }
 
@@ -1022,8 +1043,12 @@ h3 {
     float: initial;
   }
 
-  #countdown div.register {
-    width: 80%;
-    float: initial;
+  .register {
+    margin-bottom: 1em;
+  }
+
+  #home {
+    height: 120%;
+    margin-bottom: 3em;
   }
 }
