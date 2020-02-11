@@ -300,6 +300,9 @@ h3 {
 
 #bucket {
   overflow: hidden;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 #countdown {
@@ -336,17 +339,16 @@ h3 {
   background-color: rgba(0, 0, 0, 0.95);
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.25em;
-  width: 4em;
-  margin-left: 3em;
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 2em;
+  margin-top: -2em;
 }
 
 .register:hover {
   transform: scale(1.1);
 }
 
-#registerLink {
-  width: 4em;
-}
 
 #countdown span::after {
   content: attr(id);
