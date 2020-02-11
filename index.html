@@ -3,12 +3,13 @@
     <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="initial-scale=1, minimum-scale=1" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <meta property="og:title" content="Catalyst 5" />
+    <meta property="og:title" content="Catalyst 4" />
+    <meta property="og:url" content="https://catalyst.hack.gt/" />
+    <meta property="og:image" content="https://catalyst.hack.gt/assets/Catalyst_Mainpage_Example.png" />
     <meta
       property="og:description"
-      content="Catalyst is a free event held on Satuday March 28th, where metro Atlanta high school students will epxlore technology and learn from our sponsors and mentors at Georgia Tech."
+      content="Catalyst is a free event held on Saturday March 28th, where metro Atlanta high school students will epxlore technology and learn from our sponsors and mentors at Georgia Tech."
     />
-    <!-- <meta property="og:url" content="https://catalyst.hack.gt"> -->
     <title>Catalyst</title>
   </head>
 
@@ -128,7 +129,7 @@
                     </div>
                 </div>
             </section> -->
-        <section id="about">
+        <section class="lax" data-lax-translate-y="(0*vh) 100, (2*vh) 0" id="about">
           <div>
             <h1>About</h1>
             <div class="container">
@@ -137,7 +138,7 @@
                   HackGT presents Catalyst, a FREE day of STEAM directed towards
                   high school students in the Metro Atlanta Area. We are eager
                   to welcome all of these students on
-                  <b><u>Saturday March 28th</u></b> to Georgia Tech's Campus.
+                  <b><u>Saturday, March 28th</u></b> to Georgia Tech's Campus.
                 </p>
               </div>
 
@@ -151,7 +152,9 @@
                 Learn about the world of STEAM and Computer Science as a career
                 path.
               </li>
-              <li>Gain insight into impactful, widely known tech companies.</li>
+              <li>
+                Gain insight into impactful, widely known tech companies.
+              </li>
               <li>
                 Receive mentorship from college students and industry
                 professionals.
@@ -163,14 +166,14 @@
             </ul>
           </div>
         </section>
-        <section id="day">
+        <section class="lax" data-lax-translate-y="(2*vh) 100, (4*vh) 0" id="day">
           <div>
             <h1>During the Day</h1>
             <div class="container">
               <div class="col">
                 <p>
                   Throughout the day, students will follow one of four tracks:
-                  Hardware, Gaming, InfoSec, MusicTech
+                  Hardware, Gaming, Info Security, MusicTech
                 </p>
 
                 <p>
@@ -193,7 +196,7 @@
             </div>
           </div>
         </section>
-        <section id="registration">
+        <section class="lax" data-lax-translate-y="(4*vh) 100, (6*vh) 0" id="registration">
           <div>
             <h1>Registration</h1>
             <div class="container">
@@ -211,7 +214,7 @@
             </div>
           </div>
         </section>
-        <section id="tracks">
+        <section class="lax" data-lax-translate-y="(6*vh) 100, (8*vh) 0" id="tracks">
           <div>
             <h1>Tracks</h1>
             <div class="container">
@@ -269,7 +272,7 @@
               <div class="col">
                 <div id="track-container" class="container">
                   <div class="col">
-                    <p>InfoSec</p>
+                    <p>Info Security</p>
                   </div>
 
                   <div class="col track-description">
@@ -333,7 +336,7 @@
                     </div>
                 </div>
             </section> -->
-        <section id="faq">
+        <section class="lax" data-lax-translate-y="(8*vh) 100, (10*vh) 0" id="faq">
           <div>
             <h1>FAQ</h1>
             <div>
@@ -382,10 +385,14 @@
                 and high school communities. To learn more, check out our
                 organization website <a href="https://hack.gt">here</a>.
               </p>
+              <p>Other Questions?</p>
+              <p>
+                Email <a href="mailto:hello@hack.gt">hello@hack.gt</a>
+              </p>
             </div>
           </div>
         </section>
-        <section id="sponsors">
+        <section class="lax" data-lax-translate-y="(10*vh) 100, (12*vh) 0" id="sponsors">
           <div>
             <h1>Sponsors</h1>
             <div>
@@ -404,8 +411,45 @@
                     </div> -->
           </div>
         </section>
+        <div id="footer">
+        <div>
+            <div id="social">
+                <a href="https://www.instagram.com/thehackgt/?hl=en">
+                    <img src="assets/social/insta.svg" />
+                </a>
+                <a href="https://www.facebook.com/TheHackGT/">
+                    <img src="assets/social/fb.svg" />
+                </a>
+                <a href="https://twitter.com/thehackgt?lang=en">
+                    <img src="assets/social/twitter.svg" />
+                </a>
+                <a href="https://github.com/HackGT">
+                    <img src="assets/social/github.svg" />
+                </a>
+                <a href="https://hack.gt/">
+                    <img src="assets/social/website.svg" />
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>Made with &hearts; by the HackGT Team</div>
+        </div>
+      </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        // from https://github.com/alexfoxy/laxxx
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }</script>
     <script src="index.js"></script>
   </body>
 </html>

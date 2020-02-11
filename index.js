@@ -53,7 +53,11 @@ function removeColor(linkk) {
 updateTime();
 setInterval(updateTime, 1000);
 
-
+window.addEventListener("resize", function() {
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); 
+    const vw = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+	lax.updateElements()
+});
 
 
 
