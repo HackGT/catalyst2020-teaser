@@ -299,9 +299,6 @@ h3 {
 }
 
 #bucket {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -323,6 +320,7 @@ h3 {
   font-size: 2.5em;
   display: inline-block;
   text-align: center;
+  margin-top: 1em;
 }
 
 #countdown div.register {
@@ -338,18 +336,16 @@ h3 {
   background-color: rgba(0, 0, 0, 0.95);
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1.25em;
-  margin: auto;
-  width: fit-content;
-  margin-bottom: 2em;
-  margin-top: -2em;
-}
-
-.register a {
-  width: 2em;
+  width: 4em;
+  margin-left: 3em;
 }
 
 .register:hover {
   transform: scale(1.1);
+}
+
+#registerLink {
+  width: 4em;
 }
 
 #countdown span::after {
@@ -619,6 +615,7 @@ h3 {
     padding: 0.25em 0.5em 0.25em 0.5em;
     widows: 1em;
     font-size: 1em;
+    margin: auto;
     margin-bottom: 2em;
   }
 
