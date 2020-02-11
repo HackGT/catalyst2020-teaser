@@ -11,7 +11,6 @@
       content="Catalyst is a free event held on Saturday, March 28th, where metro Atlanta high school students will epxlore technology and learn from our sponsors and mentors at Georgia Tech."
     />
     <title>Catalyst</title>
-    <base target="_blank" />
   </head>
 
   <body>
@@ -63,6 +62,11 @@
             </div>
           </div>
           <div id="bucket">
+            <a href="https://registration.catalyst.hack.gt/" target="_blank" class="register">
+              <div>
+                <p>Register</p>
+              </div>
+            </a>
             <div id="countdown">
               <div><span id="days">0</span></div>
               <div><span id="hours">0</span></div>
@@ -71,12 +75,11 @@
             </div>
   
             <!--<div class="register"><a href="#important-info">Day-Of Info</a></div>-->
-            <div id="regbutton"><div class="register"><a href="https://registration.catalyst.hack.gt/">Register</a></div><div>
           </div>
                 <!-- </div> -->
         </section>
         
-        <section class="lax" data-lax-translate-y="(0*vh) 100, (2*vh) 0" id="about">
+        <section id="about">
           <div>
             <h1>About</h1>
             <div class="container">
@@ -105,6 +108,7 @@
                     further their education and exposure.
                   </li>
                 </ul>
+                <br>
                 <p>
                   Are you a current Georgia Tech student? You can still participate 
                   in this event! Each year GT students volunteer as mentors to help 
@@ -138,7 +142,7 @@
             </div>
           </div>
         </section>
-        <section class="lax" data-lax-translate-y="(2*vh) 100, (4*vh) 0" id="day">
+        <section id="day">
           <div>
             <h1>During the Day</h1>
             <div class="container">
@@ -167,14 +171,14 @@
             </div>
           </div>
         </section>
-        <section class="lax" data-lax-translate-y="(4*vh) 100, (6*vh) 0" id="registration">
+        <section id="registration">
           <div>
             <h1>Registration</h1>
             <div class="container">
               <div class="col">
                 <p>
                   You can register
-                  <a href="https://registration.catalyst.hack.gt/">here!</a>
+                  <a href="https://registration.catalyst.hack.gt/" target="_blank">here!</a>
                 </p>
                 <p>
                   Registration closes on March 14th for participants and 
@@ -188,7 +192,7 @@
             </div>
           </div>
         </section>
-        <section class="lax" data-lax-translate-y="(6*vh) 100, (8*vh) 0" id="tracks">
+        <section id="tracks">
           <div>
             <h1>Tracks</h1>
             <div class="container">
@@ -295,7 +299,7 @@
           </div>
         </section>
         
-        <section class="lax" data-lax-translate-y="(8*vh) 100, (10*vh) 0" id="faq">
+        <section id="faq">
           <div>
             <h1>FAQ</h1>
             <div>
@@ -315,9 +319,9 @@
               <p>Where is Catalyst?</p>
               <p>
                 The event will be in the
-                <a href="https://goo.gl/maps/vYgv5rqy1hz"
-                  >Klaus Advanced Computing Building</a
-                >
+                <a href="https://goo.gl/maps/vYgv5rqy1hz" target="_blank">
+                  Klaus Advanced Computing Building
+                </a>
                 at Georgia Tech.
               </p>
 
@@ -351,18 +355,20 @@
             </div>
           </div>
         </section>
-        <section class="lax" data-lax-translate-y="(10*vh) 100, (12*vh) 0" id="sponsors">
+        <section id="sponsors">
           <div>
-            <h1>Sponsors</h1>
-            <div>
-              <p>Coming soon!</p>
-              <p>
-                Interested in sponsoring Catalyst? Send us an email to
-                <a href="sposorship@hack.gt">sponsorship@hack.gt</a> - we're
-                looking forward to working with you!
-              </p>
+              <h1>Sponsors</h1>
+              <div class="container">
+                <div class="col">
+                  <p>Coming soon!</p>
+                  <p>
+                      Interested in sponsoring Catalyst? Send us an email to
+                      <a href="sposorship@hack.gt">sponsorship@hack.gt</a> - we're
+                      looking forward to working with you!
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
         </section>
         <div id="footer">
         <div>
@@ -390,19 +396,6 @@
       </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script>
-        // from https://github.com/alexfoxy/laxxx
-        window.onload = function () {
-            lax.setup() // init
-
-            const updateLax = () => {
-                lax.update(window.scrollY)
-                window.requestAnimationFrame(updateLax)
-            }
-
-            window.requestAnimationFrame(updateLax)
-        }</script>
     <script src="index.js"></script>
   </body>
 </html>
