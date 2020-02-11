@@ -565,6 +565,7 @@ h3 {
 
   .track-descrption {
     text-align: center;
+    font-size: 0.5em;
   }
 
   .col:not(.track-description) p {
@@ -576,7 +577,7 @@ h3 {
     margin-bottom: 2em;
   }
   .track-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
   }
   .sponsor-container {
@@ -635,4 +636,5 @@ h3 {
     font-size: 0.75em;
     padding-bottom: 0.5em;
   }
+
 }
