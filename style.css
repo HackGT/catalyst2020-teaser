@@ -561,8 +561,12 @@ h3 {
   }
   .col:not(.track-description) {
     font-size: 0.5em;
+  }
+
+  .track-descrption {
     text-align: center;
   }
+
   .col:not(.track-description) p {
     margin: 0;
     padding: 0;
