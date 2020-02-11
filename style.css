@@ -124,6 +124,7 @@ nav a.active span {
 nav {
   height: 100vh;
   padding: 0.5em 2em;
+  z-index: 100000;
 }
 
 #content {
@@ -238,7 +239,7 @@ section:not(#home) p {
   align-content: center;
   flex-direction: column;
 
-  z-index: 1000;
+  z-index: 10;
 }
 
 .track-text p {
@@ -258,8 +259,14 @@ h3 {
 
 #home {
   text-align: center;
+  width: 100%;
   height: 100%;
+  margin-bottom: 3em;
+  position: relative;
   margin: 0;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #home h3 {
@@ -277,18 +284,25 @@ h3 {
 }
 
 #splash-parent {
-  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #splash-text {
   padding: 0.5em 1em;
-  margin-top: 50vh;
+  margin-top: 25vh;
+  margin-bottom: 15vh;
   text-transform: uppercase;
   display: inline-block;
   font-size: 1.5em;
   /*transform: translateY(-60%); */
   margin-right: auto;
   margin-left: auto;
+}
+
+#bucket {
+  display: block;
 }
 
 #countdown {
@@ -299,12 +313,13 @@ h3 {
 }
 
 #countdown div {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 0.5em;
   background-color: rgba(0, 0, 0, 0.95);
   padding: 0.75em;
-  font-size: 3.5em;
+  padding-bottom: 1.25em;
+  font-size: 2.5em;
   float: left;
   display: inline-block;
   text-align: center;
@@ -396,6 +411,45 @@ h3 {
 
 .sponsor-container a:nth-of-type(2n + 1):hover {
   transform: scale(1.05) rotate(2deg);
+}
+
+/* Footer */
+#footer {
+  color: var(--text-dark-bg);
+  height: 200px;
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social {
+  display: flex;
+  z-index: 1000;
+}
+
+#social img {
+  height: 35px;
+}
+
+#social a {
+  height: 35px;
+  padding: 0 5px 0 5px;
+}
+
+#footer > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -546,577 +600,5 @@ h3 {
   #countdown div.register {
     width: 80%;
     float: initial;
-  }
-}
-
-#container {
-  display: flex;
-  width: 100vw;
-}
-
-.container {
-  display: flex;
-}
-
-.col {
-  flex: 1;
-}
-
-.col img {
-  max-width: 75%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-}
-
-nav ul {
-  padding: 0;
-}
-
-#about ul,
-#important-info ul {
-  margin: 0;
-  padding: 0;
-}
-
-#about ul li,
-#important-info ul li {
-  list-style: none;
-  margin-bottom: 0.5em;
-}
-
-#about .col img {
-  max-width: 50%;
-}
-
-#about ul li::before,
-#important-info ul li::before {
-  content: "\2022";
-  color: white;
-  font-size: 2.5em;
-  vertical-align: middle;
-  line-height: 0.5;
-  margin: 0 0.125em 0 0.5em;
-}
-
-nav a {
-  font-weight: bold;
-  font-style: initial;
-  font-size: 1.5em;
-  padding: 0.25em;
-  color: #999;
-  transition: 0.5s color;
-}
-
-a {
-  color: white;
-}
-
-nav a.active span {
-  /*color: #e6e6e6;*/
-  /*background: linear-gradient(to right, #30CFD0 0%, #330867 100%);*/
-  /*background: linear-gradient(to right, #ff7675 0%, #fab1a0, #fdcb6e, #00b894, #0984e3, #6c5ce7 100%);*/
-  background: linear-gradient(
-    to right,
-    #5900ff 0%,
-    #b600bc,
-    #da349d,
-    #d57b9b,
-    #d1b499,
-    #ccf696,
-    #aefaa4,
-    #4ee8d1,
-    #2ce1e0,
-    #00d9f5 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-nav {
-  height: 100vh;
-  padding: 0.5em 2em;
-}
-
-#content {
-  background: 
-      url(assets/space/Stars_Stars.svg),
-      url(assets/space/Blob_1_Blob_1.svg),
-      url(assets/space/Planet_2_Planet_2.svg),
-      url(assets/space/Planet_3_Planet_3.svg),
-      url(assets/space/Blob_2_Blob_2.svg),
-      url(assets/space/Blob_3_Blob_3.svg),
-      url(assets/space/Planet_1_Planet_1.svg),
-      rgba(48, 37, 62, 1);
-  background-size: 100%,
-  50%, 18%, 15%, 40%, 60%, 78%, cover;
-  height: 100vh;
-  flex: 1;
-  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-position: 
-      center, /*Stars*/
-      -10% -50%, /*Blob 1*/
-      75% 9%, /*Planet 2*/
-      90% 80%,  /*Planet 3*/
-      110% 15%, /*Blob 2*/
-      110% 250%, /*Blob 3*/
-      -90% -200%, /*Planet 1*/
-      center; /*Background color*/
-}
-
-#content-wrapper {
-  overflow: visible;
-}
-
-section:not(#home) {
-  padding: 5%;
-}
-
-section:not(#home) > div {
-  min-height: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2em 3em;
-}
-
-@media screen and (min-width: 601px) {
-  section:not(#home) h1 {
-    font-family: "EarthOrbiter";
-    font-size: 3em;
-    text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  section:not(#home) h1 {
-    font-family: "EarthOrbiter";
-    font-size: 2em;
-    text-decoration: none;
-  }
-}
-
-section:not(#home) p {
-  font-size: 1.25em;
-  /*color: #999;*/
-}
-
-#tracks .container .col .container .col:not(.track-description) {
-  margin: auto 0;
-  font-size: 1.25em;
-}
-
-#tracks .container .col:not(:first-of-type) .container {
-  flex-direction: row-reverse;
-}
-
-#tracks .container .container {
-  position: relative;
-  margin-bottom: 6em;
-}
-
-.col.track-description {
-  flex: 2;
-}
-
-/*#tracks .container .container .col p {
-  text-decoration: underline;
-}*/
-
-#tracks .container .container .col {
-  transition: 0.25s all;
-}
-
-#tracks .container .container:hover .col {
-  opacity: 0;
-}
-
-#tracks .container .container:hover .track-text {
-  opacity: 1;
-}
-
-.track-text {
-  font-size: 0.8em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.25s all;
-  height: 100%;
-  width: 90%;
-  padding: 0.25em;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-
-  z-index: 1000;
-}
-
-.track-text p {
-  vertical-align: middle;
-}
-
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 800;
-  /*font-style: italic;*/
-}
-
-#home {
-  text-align: center;
-  height: 100%;
-  margin: 0;
-}
-
-#splash-text > h1 {
-  font-size: 4em;
-}
-
-#splash-text > * {
-  display: block;
-  margin: 0;
-  text-align: center;
-}
-
-#splash-parent {
-  width: 100%;
-}
-
-#splash-text {
-  padding: 0.5em 1em;
-  margin-top: 50vh;
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 1.5em;
-  transform: translateY(-60%);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#countdown {
-  margin: 2.5em;
-  text-align: center;
-  float: right;
-}
-
-#countdown div {
-  width: 1.5em;
-  height: 1.5em;
-  margin: 0.25em;
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 0.75em;
-  font-size: 2.5em;
-  float: left;
-  display: inline-block;
-  text-align: center;
-}
-
-#countdown div.register {
-  width: auto;
-  transition: 0.25s all;
-}
-
-#countdown div.register a {
-  width: 100%;
-}
-
-#countdown span::after {
-  content: attr(id);
-  font-size: 0.37em;
-  display: block;
-}
-
-#hamburger-input {
-  display: none;
-}
-
-#hamburger-label {
-  display: none;
-}
-
-#schedule img {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-}
-
-#schedule p {
-  text-align: center;
-}
-
-#faq p:nth-of-type(2n - 1) {
-  font-size: 1.25em;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-#faq p:nth-of-type(2n) {
-  font-size: 1em;
-  padding-bottom: 0.5em;
-}
-
-.sponsor-container {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  min-height: 50%;
-  padding-top: 2em;
-}
-
-.sponsor-container a:first-of-type {
-  grid-column: span 3;
-  max-width: 35%;
-}
-
-.sponsor-container a {
-  width: 75%;
-  transition: 0.25s all;
-}
-
-.sponsor-container a:nth-of-type(2n):hover {
-  transform: scale(1.05) rotate(-2deg);
-}
-
-.sponsor-container a:nth-of-type(2n + 1):hover {
-  transform: scale(1.05) rotate(2deg);
-}
-
-/* Footer */
-#footer {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 0;
-  padding: 1em;
-  left: 0;
-  right: 0;
-  color: white;
-  z-index: 10000;
-  margin-top: 2em;
-  color: white;
-  clear: both;
-}
-
-#footer > div:nth-child(1) {
-  width: 100%;
-  display: flex;
-  padding: 1em 0.5em 1em 0.5em;
-  justify-content: space-around;
-}
-
-#social {
-  display: flex;
-  z-index: 1000;
-}
-
-#social img {
-  height: 2em;
-}
-
-#social a {
-  padding: 0.125 0.25em 0.125 0.25em;
-}
-
-#footer > div:nth-child(2) {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-@media only screen and (max-width: 1100px) {
-  #about .container {
-    /*flex-direction: column-reverse;*/
-  }
-
-  #about .container .col img {
-    max-width: 40%;
-  }
-
-  #countdown {
-    font-size: 0.7em;
-    /*text-align: center;*/
-  }
-
-  nav {
-    font-size: 0.8em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-  }
-
-  #hamburger-label {
-    background-color: rgb(0, 0, 0);
-    display: block;
-    margin: 0;
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  #hamburger-label div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #hamburger-label span {
-    width: 2em;
-    height: 4px; /*the bars are not uniform height on ems for some reason; think it's a chrome bug or smthng idk*/
-    background-color: white;
-    display: block;
-    /*border-radius: 0.25em;*/
-    margin: 0.5em 0;
-    transition: 0.25s;
-  }
-
-  nav ul {
-    position: fixed;
-    left: -100vw;
-    font-size: 1.5em;
-    text-align: center;
-    width: 100vw;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 0;
-    transition: 0.5s all;
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100vh;
-    top: 0;
-  }
-
-  nav ul {
-    padding-top: 4em;
-  }
-
-  #hamburger-input:checked ~ ul {
-    left: 0;
-  }
-
-  #hamburger-input:checked ~ #hamburger-label span:first-of-type {
-    transform: translateY(0.8em) rotate(45deg);
-  }
-
-  #hamburger-input:checked ~ #hamburger-label span:last-of-type {
-    transform: translateY(-0.8em) rotate(-45deg);
-  }
-
-  #hamburger-input:checked
-    ~ #hamburger-label
-    span:not(:first-of-type):not(:last-of-type) {
-    opacity: 0;
-  }
-
-  #countdown div {
-    width: 1em;
-    height: 1em;
-    /*float: initial;*/
-  }
-
-  #countdown div:not(.register) * {
-    position: relative;
-    top: -0.25em;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .container {
-    display: block;
-  }
-  .col:not(.track-description) {
-    font-size: 1.125em;
-    /* text-align: center; */
-  }
-  .col:not(.track-description) p {
-    margin: 0;
-    padding: 0;
-  }
-
-  .track-text p {
-    background-color: black;
-    font-size: 0.125em;
-  }
-  .sponsor-container {
-    display: block;
-  }
-  .sponsor-container a {
-    display: block;
-    margin: 5em auto;
-  }
-  .sponsor-container a:first-of-type {
-    max-width: none;
-  }
-
-  #countdown span::after {
-    font-size: 0.27em;
-  }
-
-  #regbutton {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-
-  .register div {
-    margin-bottom: 3em;
-    align-content: center;
-  }
-
-  #footer {
-    padding-top: 4.5em;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  #splash-text {
-    font-size: 0.8em;
-  }
-
-  #countdown {
-    text-align: center;
-  }
-
-  #countdown div:not(.register) {
-    float: initial;
-  }
-
-  #regbutton {
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .register {
-    margin-bottom: 1em;
-  }
-
-  #home {
-    height: 120%;
-    margin-bottom: 3em;
-  }
-
-  #footer {
-    padding-top: 4em;
-    justify-content: center;
-    align-items: center;
   }
 }
