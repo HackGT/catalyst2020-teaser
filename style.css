@@ -106,20 +106,17 @@ nav a.active span {
   /*background: linear-gradient(to right, #ff7675 0%, #fab1a0, #fdcb6e, #00b894, #0984e3, #6c5ce7 100%);*/
   background: linear-gradient(
     to right,
-    #5900ff 0%,
-    #b600bc,
-    #da349d,
-    #d57b9b,
-    #d1b499,
-    #ccf696,
-    #aefaa4,
-    #4ee8d1,
-    #2ce1e0,
-    #00d9f5 100%
+    rgb(249, 247, 122) 0%,
+    rgb(254, 198, 104),
+    rgb(253, 150, 117),
+    rgb(253, 113, 146),
+    rgb(212, 96, 176),
+    rgb(132, 97, 192) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 nav {
   height: 100vh;

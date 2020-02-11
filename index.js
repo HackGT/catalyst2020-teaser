@@ -9,18 +9,26 @@ function updateTime() {
 
   var delta = catalystDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  days.innerHTML = Math.floor(delta / (1000 * 60 * 60 * 24));
-  hours.innerHTML = Math.floor(
-    (delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  minutes.innerHTML = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
-  seconds.innerHTML = Math.floor((delta % (1000 * 60)) / 1000);
+  if (delta >= 0) {
+    // Time calculations for days, hours, minutes and seconds
+    days.innerHTML = Math.floor(delta / (1000 * 60 * 60 * 24));
+    hours.innerHTML = Math.floor(
+        (delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    minutes.innerHTML = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
+    seconds.innerHTML = Math.floor((delta % (1000 * 60)) / 1000);
+  } else {
+      days.innerHTML = 0;
+      hours.innerHTML = 0;
+      minutes.innerHTML = 0;
+      seconds.innerHTML = 0;
+  }
+  
 }
 
 var gradient = 0;
-//var nav = document.getElementsByTagName("nav")[0];
-//var navLinks = nav.getElementsByTagName("a");
+var nav = document.getElementsByTagName("nav")[0];
+var navLinks = nav.getElementsByTagName("a");
 
 function gradientTime(linkk) {
     switch(gradient % 6) {
@@ -53,50 +61,45 @@ function removeColor(linkk) {
 updateTime();
 setInterval(updateTime, 1000);
 
-window.addEventListener("resize", function() {
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0); 
-    const vw = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	lax.updateElements()
-});
 
 
 
 
+var states = [];
 
-// var states = [];
-// for (var i = 0; i < navLinks.length; i++) {
-//   states.push(navLinks[i].getAttribute("href"));
-// }
+for (var i = 0; i < navLinks.length; i++) {
+  states.push(navLinks[i].getAttribute("href"));
+}
 
-// function highlightLink(linkIndex) {
-//   for (let j = 0; j < navLinks.length; j++) {
-//     if (j == linkIndex) {
-//       navLinks[j].classList.add("active");
-//     } else {
-//       navLinks[j].classList.remove("active");
-//     }
-//   }
-// }
+function highlightLink(linkIndex) {
+  for (let j = 0; j < navLinks.length; j++) {
+    if (j == linkIndex) {
+      navLinks[j].classList.add("active");
+    } else {
+      navLinks[j].classList.remove("active");
+    }
+  }
+}
 
-// for (let i = 0; i < navLinks.length; i++) {
-//   navLinks[i].onclick = function() {
-//     highlightLink(i);
-//     uncheck();
-//   };
-// }
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].onclick = function() {
+    highlightLink(i);
+    uncheck();
+  };
+}
 
-// function handleScroll() {
-//   for (var i = navLinks.length - 1; i >= 0; i--) {
-//     var relevantId = navLinks[i].getAttribute("href").slice(1);
-//     if (document.getElementById(relevantId).getBoundingClientRect().y <= 20) {
-//       highlightLink(i);
-//       return;
-//     }
-//   }
-// }
+function handleScroll() {
+  for (var i = navLinks.length - 1; i >= 0; i--) {
+    var relevantId = navLinks[i].getAttribute("href").slice(1);
+    if (document.getElementById(relevantId).getBoundingClientRect().y <= 20) {
+      highlightLink(i);
+      return;
+    }
+  }
+}
 
-// window.onload = handleScroll;
-// document.getElementById("content").onscroll = handleScroll;
+window.onload = handleScroll;
+document.getElementById("content").onscroll = handleScroll;
 
 var checkbox = document.getElementById("hamburger-input");
 function uncheck() {
