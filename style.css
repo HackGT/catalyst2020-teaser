@@ -869,7 +869,7 @@ h3 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   min-height: 50%;
   padding-top: 2em;
@@ -1068,6 +1068,16 @@ h3 {
     max-width: none;
   }
 
+  #countdown span::after {
+    font-size: 0.27em;
+  }
+
+  #regbutton {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
   .register div {
     margin-bottom: 3em;
     align-content: center;
@@ -1093,9 +1103,14 @@ h3 {
     float: initial;
   }
 
+  #regbutton {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   .register {
     margin-bottom: 1em;
-    align-content: center;
   }
 
   #home {
