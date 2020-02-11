@@ -337,7 +337,7 @@ h3 {
 
 #countdown span::after {
   content: attr(id);
-  font-size: 0.5em;
+  font-size: 0.37em;
   display: block;
 }
 
@@ -470,9 +470,6 @@ h3 {
     padding-top: 4em;
   }
 
-  nav a:hover {
-    color: linear-gradient(to right, #ff7bac, #fd9675);
-  }
 
   #hamburger-input:checked ~ ul {
     left: 0;
@@ -835,7 +832,7 @@ h3 {
 
 #countdown span::after {
   content: attr(id);
-  font-size: 0.5em;
+  font-size: 0.37em;
   display: block;
 }
 
@@ -1073,6 +1070,7 @@ h3 {
 
   .register div {
     margin-bottom: 3em;
+    align-content: center;
   }
 
   #footer {
@@ -1097,6 +1095,7 @@ h3 {
 
   .register {
     margin-bottom: 1em;
+    align-content: center;
   }
 
   #home {
