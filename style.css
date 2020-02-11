@@ -14,6 +14,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("./assets/Ubuntu/Ubuntu-Bold.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+
 div {
   font-family: "Ubuntu";
   font-weight: normal;
@@ -376,6 +384,7 @@ h3 {
 
 #faq p:nth-of-type(2n - 1) {
   font-size: 1.25em;
+  font-family: 'Ubuntu-Bold';
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -628,6 +637,7 @@ h3 {
 
   #faq p:nth-of-type(2n - 1) {
     font-size: 1em;
+    font-family: 'Ubuntu-Bold';
     padding-bottom: 0;
     margin-bottom: 0;
   }
