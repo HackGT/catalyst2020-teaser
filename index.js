@@ -62,9 +62,6 @@ updateTime();
 setInterval(updateTime, 1000);
 
 
-
-
-
 var states = [];
 
 for (var i = 0; i < navLinks.length; i++) {

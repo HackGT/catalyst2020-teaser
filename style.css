@@ -563,16 +563,19 @@ h3 {
   }
   .col:not(.track-description) {
     font-size: 0.5em;
-    /* text-align: center; */
+    text-align: center;
   }
   .col:not(.track-description) p {
     margin: 0;
     padding: 0;
   }
-
-  .track-text p {
-    background-color: black;
-    font-size: 0.75em;
+  #track-container {
+    padding-bottom: 10%;
+    margin-bottom: 2em;
+  }
+  .track-text {
+    font-size: 1.3em;
+    text-align: center;
   }
   .sponsor-container {
     display: block;
