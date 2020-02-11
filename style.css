@@ -343,6 +343,8 @@ h3 {
   font-size: 1.25em;
   margin: auto;
   width: fit-content;
+  margin-bottom: 2em;
+  margin-top: -2em;
 }
 
 .register a {
@@ -595,15 +597,29 @@ h3 {
   #countdown {
     text-align: center;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   #countdown div:not(.register) {
     float: initial;
+    width: 1em;
+    padding: 0.5em;
+    font-size: 2em;
+    /* margin: auto; */
   }
 
   #countdown div.register {
-    width: 80%;
+    width: 2em;
     float: initial;
+  }
+
+  .register {
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    widows: 1em;
+    font-size: 1em;
+    margin-bottom: 2em;
   }
 
   #faq p:nth-of-type(2n - 1) {
