@@ -14,6 +14,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("./assets/Ubuntu/Ubuntu-Bold.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+
 div {
   font-family: "Ubuntu";
   font-weight: normal;
@@ -376,6 +384,7 @@ h3 {
 
 #faq p:nth-of-type(2n - 1) {
   font-size: 1.25em;
+  font-family: 'Ubuntu-Bold';
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -561,8 +570,13 @@ h3 {
   }
   .col:not(.track-description) {
     font-size: 0.5em;
-    text-align: center;
   }
+
+  .track-descrption {
+    text-align: center;
+    font-size: 0.5em;
+  }
+
   .col:not(.track-description) p {
     margin: 0;
     padding: 0;
@@ -572,7 +586,7 @@ h3 {
     margin-bottom: 2em;
   }
   .track-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
   }
   .sponsor-container {
@@ -623,6 +637,7 @@ h3 {
 
   #faq p:nth-of-type(2n - 1) {
     font-size: 1em;
+    font-family: 'Ubuntu-Bold';
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -631,4 +646,5 @@ h3 {
     font-size: 0.75em;
     padding-bottom: 0.5em;
   }
+
 }
