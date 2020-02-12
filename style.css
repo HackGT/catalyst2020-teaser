@@ -21,7 +21,6 @@
   font-style: bold;
 }
 
-
 div {
   font-family: "Ubuntu";
   font-weight: normal;
@@ -126,7 +125,6 @@ nav a.active span {
   -webkit-text-fill-color: transparent;
 }
 
-
 nav {
   height: 100vh;
   padding: 0.5em 2em;
@@ -134,31 +132,21 @@ nav {
 }
 
 #content {
-  background: 
-      url(assets/space/Stars_Stars.svg),
-      url(assets/space/Blob_1_Blob_1.svg),
-      url(assets/space/Planet_2_Planet_2.svg),
-      url(assets/space/Planet_3_Planet_3.svg),
-      url(assets/space/Blob_2_Blob_2.svg),
-      url(assets/space/Blob_3_Blob_3.svg),
-      url(assets/space/Planet_1_Planet_1.svg),
-      rgba(48, 37, 62, 1);
-  background-size: 100%,
-  50%, 18%, 15%, 40%, 60%, 78%, cover;
+  background: url(assets/space/Stars_Stars.svg),
+    url(assets/space/Blob_1_Blob_1.svg), url(assets/space/Planet_2_Planet_2.svg),
+    url(assets/space/Planet_3_Planet_3.svg), url(assets/space/Blob_2_Blob_2.svg),
+    url(assets/space/Blob_3_Blob_3.svg), url(assets/space/Planet_1_Planet_1.svg),
+    rgba(48, 37, 62, 1);
+  background-size: 100%, 50%, 18%, 15%, 40%, 60%, 78%, cover;
   height: 100vh;
   flex: 1;
-  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-position: 
-      center, /*Stars*/
-      -10% -50%, /*Blob 1*/
-      75% 9%, /*Planet 2*/
-      90% 80%,  /*Planet 3*/
-      110% 15%, /*Blob 2*/
-      110% 250%, /*Blob 3*/
-      -90% -200%, /*Planet 1*/
-      center; /*Background color*/
+  background-position: center, /*Stars*/ -10% -50%, /*Blob 1*/ 75% 9%,
+    /*Planet 2*/ 90% 80%, /*Planet 3*/ 110% 15%, /*Blob 2*/ 110% 250%,
+    /*Blob 3*/ -90% -200%, /*Planet 1*/ center; /*Background color*/
 }
 
 #content-wrapper {
@@ -359,7 +347,6 @@ h3 {
   transform: scale(1.1);
 }
 
-
 #countdown span::after {
   content: attr(id);
   font-size: 0.37em;
@@ -386,7 +373,7 @@ h3 {
 
 #faq p:nth-of-type(2n - 1) {
   font-size: 1.25em;
-  font-family: 'Ubuntu-Bold';
+  font-family: "Ubuntu-Bold";
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -535,7 +522,6 @@ h3 {
     padding-top: 4em;
   }
 
-
   #hamburger-input:checked ~ ul {
     left: 0;
   }
@@ -622,7 +608,7 @@ h3 {
 
   #countdown div:not(.register) {
     float: initial;
-    width: 1em;
+    width: 1.5em;
     padding: 0.5em;
     font-size: 2em;
     /* margin: auto; */
@@ -643,11 +629,11 @@ h3 {
 
   #faq p:nth-of-type(2n - 1) {
     font-size: 1em;
-    font-family: 'Ubuntu-Bold';
+    font-family: "Ubuntu-Bold";
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  
+
   #faq p:nth-of-type(2n) {
     font-size: 0.75em;
     padding-bottom: 0.5em;
@@ -660,5 +646,4 @@ h3 {
   .track-text {
     margin-top: 1.75em;
   }
-
 }
