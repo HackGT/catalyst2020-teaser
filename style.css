@@ -21,7 +21,6 @@
   font-style: bold;
 }
 
-
 div {
   font-family: "Ubuntu";
   font-weight: normal;
@@ -50,6 +49,7 @@ body {
 #track-container {
   padding-bottom: 20%;
   margin-bottom: 6em;
+  display: inline-block;
 }
 
 .col {
@@ -125,7 +125,6 @@ nav a.active span {
   -webkit-text-fill-color: transparent;
 }
 
-
 nav {
   height: 100vh;
   padding: 0.5em 2em;
@@ -133,31 +132,21 @@ nav {
 }
 
 #content {
-  background: 
-      url(assets/space/Stars_Stars.svg),
-      url(assets/space/Blob_1_Blob_1.svg),
-      url(assets/space/Planet_2_Planet_2.svg),
-      url(assets/space/Planet_3_Planet_3.svg),
-      url(assets/space/Blob_2_Blob_2.svg),
-      url(assets/space/Blob_3_Blob_3.svg),
-      url(assets/space/Planet_1_Planet_1.svg),
-      rgba(48, 37, 62, 1);
-  background-size: 100%,
-  50%, 18%, 15%, 40%, 60%, 78%, cover;
+  background: url(assets/space/Stars_Stars.svg),
+    url(assets/space/Blob_1_Blob_1.svg), url(assets/space/Planet_2_Planet_2.svg),
+    url(assets/space/Planet_3_Planet_3.svg), url(assets/space/Blob_2_Blob_2.svg),
+    url(assets/space/Blob_3_Blob_3.svg), url(assets/space/Planet_1_Planet_1.svg),
+    rgba(48, 37, 62, 1);
+  background-size: 100%, 50%, 18%, 15%, 40%, 60%, 78%, cover;
   height: 100vh;
   flex: 1;
-  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-position: 
-      center, /*Stars*/
-      -10% -50%, /*Blob 1*/
-      75% 9%, /*Planet 2*/
-      90% 80%,  /*Planet 3*/
-      110% 15%, /*Blob 2*/
-      110% 250%, /*Blob 3*/
-      -90% -200%, /*Planet 1*/
-      center; /*Background color*/
+  background-position: center, /*Stars*/ -10% -50%, /*Blob 1*/ 75% 9%,
+    /*Planet 2*/ 90% 80%, /*Planet 3*/ 110% 15%, /*Blob 2*/ 110% 250%,
+    /*Blob 3*/ -90% -200%, /*Planet 1*/ center; /*Background color*/
 }
 
 #content-wrapper {
@@ -196,8 +185,8 @@ section:not(#home) p {
 }
 
 #tracks .container .col .container .col:not(.track-description) {
-  margin: auto 0;
-  font-size: 1.25em;
+  /* margin: auto 0; */
+  font-size: 1.5em;
 }
 
 #tracks .container .col:not(:first-of-type) .container {
@@ -210,17 +199,18 @@ section:not(#home) p {
 
 .col.track-description {
   flex: 2;
+  margin-top: 1em;
 }
 
 #tracks .container .container .col p {
   font-family: "EarthOrbiter";
 }
 
-#tracks .container .container .col {
+#tracks .container .container .col:not(.track-title) {
   transition: 0.25s all;
 }
 
-#tracks .container .container:hover .col {
+#tracks .container .container:hover .col:not(.track-title) {
   opacity: 0;
 }
 
@@ -229,7 +219,7 @@ section:not(#home) p {
 }
 
 .track-text {
-  font-size: 0.8em;
+  font-size: 1.2em;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +241,7 @@ section:not(#home) p {
   vertical-align: middle;
 }
 
-li {
+nav li {
   list-style: none;
 }
 
@@ -357,7 +347,6 @@ h3 {
   transform: scale(1.1);
 }
 
-
 #countdown span::after {
   content: attr(id);
   font-size: 0.37em;
@@ -384,7 +373,7 @@ h3 {
 
 #faq p:nth-of-type(2n - 1) {
   font-size: 1.25em;
-  font-family: 'Ubuntu-Bold';
+  font-family: "Ubuntu-Bold";
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -533,7 +522,6 @@ h3 {
     padding-top: 4em;
   }
 
-
   #hamburger-input:checked ~ ul {
     left: 0;
   }
@@ -562,6 +550,11 @@ h3 {
     position: relative;
     top: -0.25em;
   }
+
+  .track-text {
+    margin-top: 1.33em;
+    font-size: 0.75em;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -586,8 +579,8 @@ h3 {
     margin-bottom: 2em;
   }
   .track-text {
-    font-size: 1.2em;
-    text-align: center;
+    font-size: 1em;
+    /* text-align: center; */
   }
   .sponsor-container {
     display: block;
@@ -616,7 +609,7 @@ h3 {
 
   #countdown div:not(.register) {
     float: initial;
-    width: 1em;
+    width: 1.5em;
     padding: 0.5em;
     font-size: 2em;
     /* margin: auto; */
@@ -637,14 +630,22 @@ h3 {
 
   #faq p:nth-of-type(2n - 1) {
     font-size: 1em;
-    font-family: 'Ubuntu-Bold';
+    font-family: "Ubuntu-Bold";
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  
+
   #faq p:nth-of-type(2n) {
     font-size: 0.75em;
     padding-bottom: 0.5em;
   }
 
+  .track-title {
+    margin-bottom: 1.2em;
+  }
+
+  .track-text {
+    margin-top: 2em;
+    font-size: 1em;
+  }
 }
