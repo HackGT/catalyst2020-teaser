@@ -552,6 +552,7 @@ h3 {
   }
 
   .track-text {
+    margin-top: 1.33em;
     font-size: 0.75em;
   }
 }
@@ -644,6 +645,7 @@ h3 {
   }
 
   .track-text {
-    margin-top: 1.75em;
+    margin-top: 2em;
+    font-size: 1em;
   }
 }
