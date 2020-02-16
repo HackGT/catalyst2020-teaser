@@ -383,6 +383,10 @@ h3 {
   padding-bottom: 0.5em;
 }
 
+#sponsors {
+  height: 40vw;
+}
+
 .sponsor-container {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -555,6 +559,28 @@ h3 {
     margin-top: 1.33em;
     font-size: 0.75em;
   }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (width: 1024px) 
+  and (height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #sponsors {
+      height: 60vw;
+    }
+}
+
+/* ----------- iPad Pro 11" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (width: 834px) 
+  and (height: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #sponsors {
+      height: 58vw;
+    }
 }
 
 @media only screen and (max-width: 700px) {
