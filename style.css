@@ -21,6 +21,12 @@
   font-style: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 div {
   font-family: "Ubuntu";
   font-weight: normal;
@@ -35,6 +41,10 @@ body {
   font-family: "Raleway", sans-serif;
   display: block;
   overflow-y: hidden;
+}
+
+strong {
+  font-family: Ubuntu-Bold;
 }
 
 #container {
