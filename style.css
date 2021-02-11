@@ -77,6 +77,16 @@ nav ul {
   padding: 0;
 }
 
+#event-info {
+  margin: auto !important;
+  background: #000000CC;
+  text-transform: none;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 15px;
+  width: 750px;
+}
+
 #about ul,
 #important-info ul {
   margin: 0;
@@ -104,9 +114,7 @@ nav ul {
 }
 
 nav a {
-  /*font-family: 'EarthOrbiter'; */
   font-weight: 800;
-  /*font-style: italic;*/
   font-size: 1.5em;
   text-decoration: none;
   padding: 0.25em;
@@ -119,18 +127,14 @@ a {
 }
 
 nav a.active span {
-  /*color: #e6e6e6;*/
-  /*background: linear-gradient(to right, #30CFD0 0%, #330867 100%);*/
-  /*background: linear-gradient(to right, #ff7675 0%, #fab1a0, #fdcb6e, #00b894, #0984e3, #6c5ce7 100%);*/
-  background: linear-gradient(
-    to right,
+  background: 
+    linear-gradient( to right,
     rgb(249, 247, 122) 0%,
     rgb(254, 198, 104),
     rgb(253, 150, 117),
     rgb(253, 113, 146),
     rgb(212, 96, 176),
-    rgb(132, 97, 192) 100%
-  );
+    rgb(132, 97, 192) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -142,21 +146,38 @@ nav {
 }
 
 #content {
-  background: url(assets/space/Stars_Stars.svg),
-    url(assets/space/Blob_1_Blob_1.svg), url(assets/space/Planet_2_Planet_2.svg),
-    url(assets/space/Planet_3_Planet_3.svg), url(assets/space/Blob_2_Blob_2.svg),
-    url(assets/space/Blob_3_Blob_3.svg), url(assets/space/Planet_1_Planet_1.svg),
+  background:
+    url(assets/space/Stars_Stars.svg),
+    url(assets/space/Blob_1_Blob_1.svg),
+    url(assets/space/Planet_2_Planet_2.svg),
+    url(assets/space/Planet_3_Planet_3.svg),
+    url(assets/space/Blob_2_Blob_2.svg),
+    url(assets/space/Blob_3_Blob_3.svg),
+    url(assets/space/Planet_1_Planet_1.svg),
     rgba(48, 37, 62, 1);
   background-size: 100%, 50%, 18%, 15%, 40%, 60%, 78%, cover;
   height: 100vh;
   flex: 1;
-  background-repeat: repeat-y, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat;
+  background-repeat:
+    repeat-y,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-position: center, /*Stars*/ -10% -50%, /*Blob 1*/ 75% 9%,
-    /*Planet 2*/ 90% 80%, /*Planet 3*/ 110% 15%, /*Blob 2*/ 110% 250%,
-    /*Blob 3*/ -90% -200%, /*Planet 1*/ center; /*Background color*/
+  background-position:
+    center, /* Stars */
+    -10% -50%, /* Blob 1 */
+    75% 9%, /* Planet 2 */
+    90% 80%, /* Planet 3 */
+    110% 15%, /* Blob 2 */
+    110% 250%, /* Blob 3 */
+    -90% -200%, /* Planet 1 */
+    center;
 }
 
 #content-wrapper {
@@ -167,9 +188,10 @@ section:not(#home) {
   padding: 5%;
 }
 
-section:not(#home) > div {
+section:not(#home)>div {
   min-height: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000000CC;
+  border-radius: 25px;
   padding: 2em 3em;
 }
 
@@ -191,11 +213,9 @@ section:not(#home) > div {
 
 section:not(#home) p {
   font-size: 1.25em;
-  /*color: #999;*/
 }
 
 #tracks .container .col .container .col:not(.track-description) {
-  /* margin: auto 0; */
   font-size: 1.5em;
 }
 
@@ -238,12 +258,10 @@ section:not(#home) p {
   height: 100%;
   width: 90%;
   padding: 0.25em;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-
   z-index: 10;
 }
 
@@ -259,7 +277,6 @@ h1,
 h2,
 h3 {
   font-weight: 800;
-  /*font-style: italic; */
 }
 
 #home {
@@ -278,11 +295,11 @@ h3 {
   font-size: 0.8em;
 }
 
-#splash-text > h1 {
+#splash-text>h1 {
   font-size: 4em;
 }
 
-#splash-text > * {
+#splash-text>* {
   display: block;
   margin: 0;
   text-align: center;
@@ -301,7 +318,6 @@ h3 {
   text-transform: uppercase;
   display: inline-block;
   font-size: 1.5em;
-  /*transform: translateY(-60%); */
   margin-right: auto;
   margin-left: auto;
 }
@@ -314,10 +330,8 @@ h3 {
 }
 
 #countdown {
-  /* margin: 2.5em; */
   text-align: center;
   float: right;
-  /* margin-bottom: 1em; */
   margin-right: 3em;
 }
 
@@ -421,11 +435,12 @@ h3 {
   transform: scale(1.05) rotate(-2deg);
 }
 
-.sponsor-container a:nth-of-type(2n + 1):hover {
+.sponsor-container a:nth-of-type(2n+1):hover {
   transform: scale(1.05) rotate(2deg);
 }
 
 /* Footer */
+
 #footer {
   height: 5em;
   padding: 1em 0;
@@ -435,7 +450,7 @@ h3 {
   align-items: center;
 }
 
-#footer > div:nth-child(1) {
+#footer>div:nth-child(1) {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -455,7 +470,7 @@ h3 {
   padding: 1em 0.5em 1em 0.5em;
 }
 
-#footer > div:nth-child(2) {
+#footer>div:nth-child(2) {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -464,20 +479,13 @@ h3 {
 }
 
 @media only screen and (max-width: 1100px) {
-  #about .container {
-    /*flex-direction: column-reverse;*/
-  }
-
   #about .container .col img {
     max-width: 40%;
   }
-
   #countdown {
     font-size: 0.7em;
     padding-bottom: 2em;
-    /*text-align: center;*/
   }
-
   nav {
     font-size: 0.8em;
     position: absolute;
@@ -487,7 +495,6 @@ h3 {
     padding: 0;
     margin: 0;
   }
-
   #hamburger-label {
     background-color: rgb(0, 0, 0);
     display: block;
@@ -498,24 +505,25 @@ h3 {
     z-index: 2;
     cursor: pointer;
   }
-
   #hamburger-label div {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
   #hamburger-label span {
     width: 2em;
-    height: 4px; /*the bars are not uniform height on ems for some reason; think it's a chrome bug or smthng idk*/
+    height: 4px;
+    /* 
+       the bars are not uniform height
+       on ems for some reason; think
+       it's a chrome bug or smthng idk
+     */
     background-color: white;
     display: block;
-    /*border-radius: 0.25em;*/
     margin: 0.5em 0;
     transition: 0.25s;
   }
-
   nav ul {
     position: fixed;
     left: -100vw;
@@ -526,45 +534,33 @@ h3 {
     margin-top: 0;
     margin-left: 0;
     transition: 0.5s all;
-    /*background-color: rgba(0, 0, 0, 0.9);*/
     background-color: #29223c;
     height: 100vh;
     top: 0;
   }
-
   nav ul {
     padding-top: 4em;
   }
-
-  #hamburger-input:checked ~ ul {
+  #hamburger-input:checked~ul {
     left: 0;
   }
-
-  #hamburger-input:checked ~ #hamburger-label span:first-of-type {
+  #hamburger-input:checked~#hamburger-label span:first-of-type {
     transform: translateY(0.8em) rotate(45deg);
   }
-
-  #hamburger-input:checked ~ #hamburger-label span:last-of-type {
+  #hamburger-input:checked~#hamburger-label span:last-of-type {
     transform: translateY(-0.8em) rotate(-45deg);
   }
-
-  #hamburger-input:checked
-    ~ #hamburger-label
-    span:not(:first-of-type):not(:last-of-type) {
+  #hamburger-input:checked~#hamburger-label span:not(:first-of-type):not(:last-of-type) {
     opacity: 0;
   }
-
   #countdown div {
     width: 1em;
     height: 1em;
-    /*float: initial;*/
   }
-
   #countdown div:not(.register) * {
     position: relative;
     top: -0.25em;
   }
-
   .track-text {
     margin-top: 1.33em;
     font-size: 0.75em;
@@ -572,25 +568,21 @@ h3 {
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (width: 1024px) 
-  and (height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    #sponsors {
-      height: 60vw;
-    }
+        /* Portrait and Landscape */
+
+@media only screen and (width: 1024px) and (height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  #sponsors {
+    height: 60vw;
+  }
 }
 
 /* ----------- iPad Pro 11" ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (width: 834px) 
-  and (height: 1112px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    #sponsors {
-      height: 58vw;
-    }
+        /* Portrait and Landscape */
+
+@media only screen and (width: 834px) and (height: 1112px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  #sponsors {
+    height: 58vw;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -600,12 +592,10 @@ h3 {
   .col:not(.track-description) {
     font-size: 0.5em;
   }
-
   .track-descrption {
     text-align: center;
     font-size: 0.5em;
   }
-
   .col:not(.track-description) p {
     margin: 0;
     padding: 0;
@@ -616,7 +606,6 @@ h3 {
   }
   .track-text {
     font-size: 1em;
-    /* text-align: center; */
   }
   .sponsor-container {
     display: block;
@@ -634,7 +623,6 @@ h3 {
   #splash-text {
     font-size: 0.8em;
   }
-
   #countdown {
     text-align: center;
     margin: auto;
@@ -642,7 +630,6 @@ h3 {
     align-items: center;
     width: 100%;
   }
-
   #countdown div:not(.register) {
     float: initial;
     width: 1.5em;
@@ -650,12 +637,10 @@ h3 {
     font-size: 2em;
     /* margin: auto; */
   }
-
   #countdown div.register {
     width: 2em;
     float: initial;
   }
-
   .register {
     padding: 0.25em 0.5em 0.25em 0.5em;
     widows: 1em;
@@ -663,26 +648,21 @@ h3 {
     margin: auto;
     margin-bottom: 2em;
   }
-
   #faq p:nth-of-type(2n - 1) {
     font-size: 1em;
     font-family: "Ubuntu-Bold";
     padding-bottom: 0;
     margin-bottom: 0;
   }
-
   #faq p:nth-of-type(2n) {
     font-size: 0.75em;
     padding-bottom: 0.5em;
   }
-
   .track-title {
     margin-bottom: 1.2em;
   }
-
   .track-text {
     margin-top: 2em;
     font-size: 1em;
   }
 }
-
