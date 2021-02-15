@@ -77,6 +77,13 @@ nav ul {
   padding: 0;
 }
 
+#banner {
+  background: #000000CC;
+  text-align: center;
+  padding: 8px 0px;
+  width: 100%;
+}
+
 #event-info {
   margin: auto !important;
   background: #000000CC;
