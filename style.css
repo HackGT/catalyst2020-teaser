@@ -393,14 +393,20 @@ h3 {
   display: none;
 }
 
-#schedule img {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
+#schedule p {
+  font-family: "Ubuntu Bold", sans-serif;
+  font-weight: bold;
 }
 
-#schedule p {
+#schedule h1 {
   text-align: center;
+}
+
+table, td, th {
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid white;
 }
 
 #faq p:nth-of-type(2n - 1) {
